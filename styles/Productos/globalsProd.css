@@ -1,7 +1,5 @@
-@import url("./header.css");
-@import url("./cards.css");
-@import url("./banner.css");
-@import url("./footer.css");
+@import url("./headerProd.css");
+@import url("./cardsProd.css");
 
 * {
     margin: 0;
@@ -10,7 +8,7 @@
 }
 
 :root {
-    --color-primario:#E06C83;
+    --color-primario: #E06C83;
     --color-secundario: #E7A9B1;
     --color-terciario: #E7C7CC;
     --color-cuarto: #F2EAED;
@@ -18,7 +16,7 @@
     --color-sexto: #EB6170;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 
 }
@@ -26,6 +24,7 @@ html{
 body {
     background-color: var(--color-cuarto);
     font-family: 'Montserrat', sans-serif;
+    height: 1280px;
 }
 
 a {
@@ -45,16 +44,19 @@ ul {
 }
 
 .title {
-    text-align: center;
-    font-size: 40px;
+
+    font-size: 30px;
     margin: 0px;
-    background-color: var(--color-quinto);
     color: var(--color-sexto);
     padding: 20px;
-    
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+    width: 400px;
+
 }
 
-.arrow-top{
+.arrow-top {
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -67,7 +69,14 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;  
+    font-size: 25px;
 
 
+}
+
+.LateralBarra{ 
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    margin-left: 25px;
 }

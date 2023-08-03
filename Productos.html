@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- link a google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- link a fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- link favicon -->
-    <link rel="shortcut icon" href="./images/Favicon2.png">
-
-    <!-- link a css -->
-    <link rel="stylesheet" href="./styles/globals.css">
-
-  
+     <!-- link a google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+ 
+     <!-- link a fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- link favicon -->
+     <link rel="shortcut icon" href="" alt="Pequeñas Amistades">
+ 
+     <!-- link a css -->
+     <link rel="stylesheet" href="./styles/Productos/globalsProd.css">
 
 
     <title>PEQUEÑAS AMISTADES</title>
 </head>
-
 <body>
     <header> <!-- Etiqueta semantica de encabezado -->
         <nav>
@@ -62,17 +58,27 @@
     </nav>
 
     <main>
-        <div class="banner">
-            <div class="bannerinfo">
-                <h1>Amigurimis</h1>
-                <h2>Se realizan modelos a pedidos!</h2>
-            </div>
-        </div>
+        <h2 class="title">Categorías</h2>
+        
+        <nav class="LateralBarra"> <!-- Etiqueta semantica barra de navegación -->
+            <ul class="LateralNavegacion"> <!-- Etiqueta lógica lista desordenada -->
+                <li> <!-- Etiqueta lógica item de la lista -->
+                    <a target="_blank" href="#">Disney</a>
+                </li>
+                <li>
+                    <a href="#">Marvel</a>
+                </li>
+                <li>
+                    <a href="#">Muñecas</a>
+                </li>
+                <li>
+                    <a href="#">Otros</a>
+                </li>
+            </ul>
+        </nav>
 
-        <h2 class="title">~ Categorías ~</h2>
-
-        <section class="listadoCartas">
-            <article class="carta">
+        <section class="listadoCartasProductos">
+            <article class="cartaProductos">
                 <img src="./images/banner6.webp" alt="imagen de Más texto">
                 <div class="info">
                     <h3>Más texto</h3>
@@ -80,7 +86,7 @@
                     <button>Visita la página</button>
                 </div>
             </article>
-            <article class="carta">
+            <article class="cartaProductos">
                 <img src="./images/banner5.png" alt="imagen de Personalizados">
                 <div class="info">
                     <h3>Personalizados</h3>
@@ -88,7 +94,7 @@
                     <button>Visita la página</button>
                 </div>
             </article>
-            <article class="carta">
+            <article class="cartaProductos">
                 <img src="./images/Fondos11.png" alt="imagen de Texto">
                 <div class="info">
                     <h3>Texto</h3>
@@ -99,21 +105,8 @@
         </section>
 
         <a href="#top"><i class="fa-solid fa-arrow-up fa-beat arrow-top"></i></a>
+
     </main>
 
-
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </li>
-            </ul>
-        </nav>
-        <p>Todos los derechos reservados</p>
-    </footer>
 </body>
-
 </html>
