@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--color-cuaternario);
+    height: 200px;
+    padding: 5px;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+footer p {
+    text-align: center;
+    color: #86572a;
+    font-size: 20px;
+    
+}
+
+footer nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 30px;
+    
+}
+
+footer nav i:hover {
+   color: #ec9f56;
+   font-size: 60px;
+   align-items: center;
+}

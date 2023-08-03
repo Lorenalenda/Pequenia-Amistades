@@ -1,0 +1,75 @@
+@import url("./header.css");
+@import url("./cards.css");
+@import url("./banner.css");
+@import url("./footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #FF9AA2;
+    --color-secundario: #FFB7B2;
+    --color-terciario: #FFDAC1;
+    --color-cuaternario: #E2F0CB;
+    --color-quinto: #B5EAD7;
+    --color-sexto: #C7CEEA;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: rgb(224, 221, 228);
+    }
+
+}
+
+.bannerinfos {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    background-color: var(--color-cuaternario);
+    color: #ec9f56;
+    height: 70px;
+  
+   
+    
+}
+
+.arrow-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #e07f3e;
+    padding: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
