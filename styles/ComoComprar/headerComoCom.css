@@ -1,0 +1,101 @@
+header {
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    color:var(--color-quinto);
+
+}
+
+header nav {
+    height: 15px;
+    gap: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+header nav div{
+    display: flex;
+    gap: 10px;
+}
+
+header i {
+    font-size: 45px;
+    color: var(--color-primario);
+}
+
+.navegacion{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-secundario);
+
+}
+
+.navbar a {
+    transition: all 300MS;
+    color: var(--color-sexto);
+
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    /*border-bottom: 2px aqua double;*/
+
+}
+
+.menu{
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    header .navbar {
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    header nav.navegacion {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .menu{
+        display: inline;
+    }
+
+}
+
+header i:hover {
+    color: #e0d3d5;
+    font-size: 45px;
+    align-items: center;
+}
