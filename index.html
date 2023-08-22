@@ -5,30 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link a google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- link a fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- link favicon -->
-    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/Favicon2.png">
 
     <!-- link a css -->
-    <link rel="stylesheet" href="./styles.css">
-    <!-- Recuerda cambiar el título del sitio web -->
-    <title>Generador de cartas</title>
+    <link rel="stylesheet" href="./styles/globals.css">
+
+  
+
+
+    <title>PEQUEÑAS AMISTADES</title>
 </head>
 
 <body>
     <header> <!-- Etiqueta semantica de encabezado -->
-        <!-- No te olvides de ponerle un encabezado a tu sitio web -->
-        <h1>Animales</h1>
+        <nav>
+            <img src="./images/Favicon2.png" alt="Logo Pequeñas Amistades" class="imagenLogoHeader">
+            <!-- Etiqueta contenedora general -->
+            <h3>PEQUEÑAS AMISTADES</h3>
+            <div>
+                <a target="_blank" href="a"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="a"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-solid fa-bars menu"></i>
+            </div>
+        </nav>
     </header>
+
+    <nav class="navegacion"> <!-- Etiqueta semantica barra de navegación -->
+        <ul class="navbar"> <!-- Etiqueta lógica lista desordenada -->
+            <li> <!-- Etiqueta lógica item de la lista -->
+                <a target="_blank" href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Productos</a>
+            </li>
+            <li>
+                <a href="#">Como Comprar</a>
+            </li>
+            <li>
+                <a href="#">Métodos de Pago y Envío</a>
+            </li>
+            <li>
+                <a href="#">Amigurumis Personalizados</a>
+            </li>
+        </ul>
+    </nav>
+
     <main>
-        <div class="botonera">
-            <button onclick="crearCarta()">AÑADIR ANIMAL</button>
+        <div class="banner">
+            <div class="bannerinfo">
+                <h1>Amigurimis</h1>
+                <h2>Se realizan modelos a pedidos!</h2>
+            </div>
         </div>
-        <section class="listadoCartas"></section>
+
+        <h2 class="title">~❤~ Categorías ~❤~</h2>
+
+        <section class="listadoCartas">
+            <article class="carta">
+                <img src="./images/banner6.webp" alt="imagen de Más texto">
+                <div class="info">
+                    <h3>Más texto</h3>
+                    <p>Van Cosas</p>
+                    <button>Visita la página</button>
+                </div>
+            </article>
+            <article class="carta">
+                <img src="./images/banner5.png" alt="imagen de Personalizados">
+                <div class="info">
+                    <h3>Personalizados</h3>
+                    <p>Otro texto</p>
+                    <button>Visita la página</button>
+                </div>
+            </article>
+            <article class="carta">
+                <img src="./images/Fondos11.png" alt="imagen de Texto">
+                <div class="info">
+                    <h3>Texto</h3>
+                    <p>Diferente texto</p>
+                    <button>Visita la página</button>
+                </div>
+            </article>
+        </section>
+
+        <a href="#top"><i class="fa-solid fa-arrow-up fa-beat arrow-top"></i></a>
     </main>
+
+
     <footer>
-        <p>Hecho con ❤ por <a href="https://github.com/Lorenalenda" target="_blank"> Lorenalenda</a></p>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </li>
+            </ul>
+        </nav>
+        <p>Hecho con ❤ por Pequeñas Amistades.</p>
     </footer>
 </body>
-<script src="./script.js"></script>
 
 </html>
